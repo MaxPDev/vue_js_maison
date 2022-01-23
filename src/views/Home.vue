@@ -21,6 +21,9 @@
         la lumière du salon
       </button>
     </div>
+    <div>
+      Il y a quelque chose de caché dans le... {{ objetLieu }}
+    </div>
 
   </div>
 </template>
@@ -35,7 +38,7 @@ export default {
         ...mapMutations(['TOGGLE_LUMIERE'])
     },
     computed: {
-        ...mapState(['lumieres']),
+        ...mapState(['lumieres','objetLieu']),
     }
 
 }

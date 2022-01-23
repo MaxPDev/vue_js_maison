@@ -3,7 +3,8 @@
         <h1>Chambre</h1>
         <button v-if="!lumieres.chambre" @click="TOGGLE_LUMIERE('chambre')">Light On</button><br />
         <button v-if="lumieres.chambre" @click="TOGGLE_LUMIERE('chambre')">Light Off</button><br />
-        <img src="https://image.freepik.com/photos-gratuite/interieur-moderne-confortable-chambre-hotel_1232-1822.jpg" alt="chambre">
+        <img src="https://image.freepik.com/photos-gratuite/interieur-moderne-confortable-chambre-hotel_1232-1822.jpg" alt="chambre"><br />
+        <router-link to="/grenier"><button>Allons au grenier</button></router-link>
     </div>
 </template>
 

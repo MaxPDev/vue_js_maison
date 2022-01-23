@@ -8,12 +8,18 @@ export default new Vuex.Store({
     lumieres: {
       salon : false,
       chambre : false,
-    }
+    },
+    objetLieu : ''
   },
   mutations: {
     // payload : piece
     TOGGLE_LUMIERE(state, piece) {
       state.lumieres[piece] = !state.lumieres[piece]
+    },
+
+    SET_OBJETLIEU(state,piece) {
+      state.objetLieu = piece;
+      alert("Vous l'avez trouvé au " + piece + " !")
     }
   },
   actions: {
