@@ -1,7 +1,8 @@
 <template>
     <div class="chambre" :class="{'lightOn' : lumieres.chambre}">
         <h1>Chambre</h1>
-        <button @click="TOGGLE_LUMIERE('chambre')">Light</button><br >
+        <button v-if="!lumieres.chambre" @click="TOGGLE_LUMIERE('chambre')">Light On</button><br />
+        <button v-if="lumieres.chambre" @click="TOGGLE_LUMIERE('chambre')">Light Off</button><br />
         <img src="https://image.freepik.com/photos-gratuite/interieur-moderne-confortable-chambre-hotel_1232-1822.jpg" alt="chambre">
     </div>
 </template>
